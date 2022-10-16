@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="newTable" , border="5px">
+      <tr>
+        <td>First Row First Cell</td>
+        <td>First Row Second Cell</td>
+      </tr>
+      <tr>
+        <td>Second Row First Cell</td>
+        <td>Second Row Second Cell</td>
+      </tr>
+    </table>
+    <script>
+      function addRow(bottom) {
+        var table = document.getElementById("newTable");
+        var row = table.insertRow(newTable.length);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "New cell";
+        cell2.innerHTML = "New cell";
+      }
+    </script>
+    <br />
+    <input type="button" value="Add New Row" onclick="addRow()" />
+  </body>
+</html>
